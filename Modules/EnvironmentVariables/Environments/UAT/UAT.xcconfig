@@ -1,0 +1,20 @@
+//
+//  UAT.xcconfig
+//  EnvironmentVariables
+//
+//  Created by Ahmad Mahmoud on 04/01/2023.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://www.appcoda.com/xcconfig-guide/
+// https://help.apple.com/xcode/#/dev745c5c974
+OTHER_SWIFT_FLAGS = -DUAT
+// Environment variables
+APP_NAME = SampleApp (UAT)
+APP_VERSION = 1.0
+APP_BUILD_NUMBER = ${RELEASE_TYPR}-1.0.0.0
+PROTOCOL = https
+APP_BASE_URL = restcountries.com/v2
+APP_CORE_DATA_CONTAINER_NAME = AppDataBase
+RELEASE_TYPR = uat
+PRODUCT_BUNDLE_IDENTIFIER = com.ams.SampleApp-${RELEASE_TYPR}
